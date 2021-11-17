@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "cy": "cypress open"
+        "cy": "cypress open",
+        "cy:posts:headless": "cypress run --spec cypress/integration/posts.js"
     },
     "devDependencies": {
         "@open-wc/eslint-config": "^7.0.0",
