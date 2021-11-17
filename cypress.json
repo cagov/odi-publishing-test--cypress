@@ -1,3 +1,4 @@
 {
-"baseUrl": "https://covid19.ca.gov"
+"baseUrl": "https://dev-sand-ca-gov.pantheonsite.io",
+"video":false
 }

@@ -9,8 +9,8 @@ const variablesWP = {
   pathLogin: '/wp-login.php',
   selectorLogin: '#user_login',
   selectorPass: '#user_pass',
-  username: process.env.UN,
-  password: process.env.PW,
+  username: Cypress.env.UN,
+  password: Cypress.env.PW,
   stringTitle: `test-${titleSlug}`,
 };
 

@@ -1,4 +1,6 @@
+.env
+cypress.env.json
 node_modules
 snapshots
 screenshots
-.env
+videos
