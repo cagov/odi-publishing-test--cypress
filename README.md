@@ -5,13 +5,13 @@
 
 1. Store WP username and password
 
-        cypress.env.json
-        ```json
-        {
-            "UN": "myusername",
-            "PW": "mypassword"
-        }
-        ```
+    _cypress.env.json_
+    ```json
+    {
+        "UN": "myusername",
+        "PW": "mypassword"
+    }
+    ```
 
 2. Get dependencies.
 
@@ -21,8 +21,14 @@
 
     a. In the background:
 
-        `npm run cy:posts:headless`
+    `npm run cy:posts:headless`
 
     b. In the debugging environment. 
 
-        `npm run cy`
+    `npm run cy`
+
+
+## Troubleshooting
+ 
+ - Make sure you've updated to the latest version of Chrome.
+ 
