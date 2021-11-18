@@ -6,6 +6,7 @@ const pageViewing = `${configSite.dev.urlViewing}/${variablesWP.stringTitle}`;
 describe('ODI Publishing', () => {
   it('Posted to WordPress', () => {
     // Visit Editing Site.
+    cy.log(variablesWP.stringTitle);
     cy.viewport(1784, 1304);
     cy.visit(configSite.dev.urlEditing + variablesWP.pathLogin);
 
@@ -28,7 +29,8 @@ describe('ODI Publishing', () => {
 
   it('Seen at Viewing URL', () => {
     // Go to Viewing URL
-    cy.wait(220000);
+    cy.log(pageViewing);
+    cy.wait(300000);
     cy.visit(pageViewing);
   });
 });

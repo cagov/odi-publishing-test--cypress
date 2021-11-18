@@ -32,3 +32,6 @@
  
  - Make sure you've updated to the latest version of Chrome.
  
+ ## Other pipelines
+
+1. Change the url values in configSite.js to test other site set ups. 

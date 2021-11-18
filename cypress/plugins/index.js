@@ -15,17 +15,19 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-vars
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
-
 
 // Include image snapshot plugin. - ZK 2021-09-13
 const {
   addMatchImageSnapshotPlugin,
 } = require('cypress-image-snapshot/plugin');
+
 module.exports = (on, config) => {
   addMatchImageSnapshotPlugin(on, config);
+};
+
+module.exports = (on, config) => {
+  // Reset title string to use a random number.
+  // @todo It would better if this increments but this will get us started.
+  config.env.titleSlug = Math.floor(Math.random(999) * 999);
+  return config;
 };
