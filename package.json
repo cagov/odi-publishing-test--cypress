@@ -1,12 +1,17 @@
 {
+    "name": "odi-publishing-test--cypress",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cagov/odi-publishing-test--cypress.git"
+    },
     "scripts": {
         "cy": "cypress open",
         "cy:posts:headless": "cypress run --spec cypress/integration/posts.js"
     },
     "eslintConfig": {
-      "extends": [
-        "@open-wc/eslint-config"
-      ]
+        "extends": [
+            "@open-wc/eslint-config"
+        ]
     },
     "devDependencies": {
         "@open-wc/eslint-config": "^7.0.0",

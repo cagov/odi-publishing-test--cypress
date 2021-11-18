@@ -4,3 +4,4 @@ node_modules
 snapshots
 screenshots
 videos
+.vscode/settings.json
